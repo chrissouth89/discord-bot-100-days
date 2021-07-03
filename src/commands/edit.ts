@@ -2,7 +2,8 @@ import { CommandInt } from "../interfaces/CommandInt";
 
 export const edit: CommandInt = {
   name: "edit",
-  description: "Edit a previous post",
+  description:
+    "Edit a previous post with messageID and your updated text after.",
   run: async (message) => {
     try {
       const { author, channel, content } = message;

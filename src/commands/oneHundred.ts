@@ -39,10 +39,7 @@ export const oneHundred: CommandInt = {
     oneHundredEmbed.addField("Day", targetCoderData.day, true);
     oneHundredEmbed.setFooter(
       "Day completed: " +
-        new Date(targetCoderData.timestamp).toLocaleDateString() +
-        " " +
-        "Message ID: " +
-        message.id
+        new Date(targetCoderData.timestamp).toLocaleDateString()
     );
 
     await channel.send(oneHundredEmbed);

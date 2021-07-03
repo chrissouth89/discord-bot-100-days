@@ -13,6 +13,9 @@ export const help: CommandInt = {
       "Commands",
       CommandList.map((el) => `\`!${el.name}\`: ${el.description}`).join("\n")
     );
+    helpEmbed.setFooter(
+      "check your id by enabling dev tools, opening the settings of a specific message and choosing copy ID"
+    );
 
     await message.channel.send(helpEmbed);
   },
