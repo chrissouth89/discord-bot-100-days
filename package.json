@@ -1,13 +1,12 @@
 {
   "name": "discordbot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Discord bot for tracking 100 days of code progress",
   "engines": {
     "node": "16.x"
   },
   "main": "./prod/index.js",
   "scripts": {
-    "prebuild": "rm -r ./prod",
     "build": "tsc",
     "start": "node -r dotenv/config ./prod/index.js"
   },
