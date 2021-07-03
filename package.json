@@ -2,6 +2,9 @@
   "name": "discordbot",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "16.x"
+  },
   "main": "./prod/index.js",
   "scripts": {
     "prebuild": "rm -r ./prod",
